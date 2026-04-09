@@ -1,37 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GetJob 🚀
+### Real-time Hiring Insights from X.com
 
-## Getting Started
+GetJob is a high-performance, premium job search platform that scans X.com (Twitter) for the latest hiring opportunities across various industries. Built with **Next.js 16**, **Tailwind CSS v4**, and **Shadcn UI**.
 
-First, run the development server:
+![App Screenshot](./public/assets/screenshot.png)
+
+## ✨ Features
+
+- **Real-time Scanning**: Queries X.com Search API v2 for the most recent job postings (updated minutes ago).
+- **Industry Filters**: Specialized filtering for Tech, Marketing, Accounting, Design, and Sales.
+- **Deep Categorization**: Tech roles include Frontend, Backend, Fullstack, Cybersecurity, DevOps, Mobile, and AI/ML.
+- **Premium UI**: Modern dark theme with glassmorphism, smooth animations, and responsive design.
+- **Direct Redirection**: Click on any job to view the original post on X.com instantly.
+- **Demo Mode**: Built-in mock data fallback for immediate testing even without an API key.
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+
+- Node.js 18+
+- An X (Twitter) Developer Account (Basic tier recommended for search access).
+
+### 2. Installation
+
+```bash
+git clone https://github.com/aadityakumarsah/getyourjobinx.git
+cd getyourjobinx
+npm install
+```
+
+### 3. Environment Variables
+
+Create a `.env` file in the root directory and add your X Bearer Token:
+
+```env
+TWITTER_BEARER_TOKEN=your_bearer_token_here
+```
+
+### 4. Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚠️ Notes on X API Tiers
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **Free Tier**: This tier does not support searching for tweets. The app will automatically run in **Demo Mode** (showing mock jobs) if you use a Free tier token.
+*   **Basic Tier ($100/mo)**: Required for live job searching. Supports up to 10,000 tweets/month.
 
-## Learn More
+## 🛠️ Built With
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Lucide Icons](https://lucide.dev/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# getyourjobinx
+---
+Developed with ❤️ by [Aaditya](https://github.com/aadityakumarsah)
